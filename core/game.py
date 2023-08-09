@@ -48,4 +48,5 @@ class Game:
     def _exit(self):
         """Выход из игры"""
         print("Приятно было провести время!")
+        sleep(3)
         sys.exit(0)
