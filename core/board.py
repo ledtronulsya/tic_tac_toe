@@ -17,7 +17,7 @@ class Board:
     def __str__(self) -> str:
         """Вывод поля в консоль"""
         res = ["| " + " | ".join(map(str, row)) + " |" for row in self.field]
-        return "_" * len(res[0]) + "\n" + '\n'.join(res) + "\n" + "‾" * len(res[0])
+        return '\n'.join(res)
     
     def out(self, x: int, y: int) -> bool:
         """Проверка, выходит ли точка за пределы поля"""
